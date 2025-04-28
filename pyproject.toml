@@ -1,0 +1,17 @@
+[project]
+name = "rdflib-serializer"
+version = "0.1.0"
+description = "A command-line tool to parse and serialize RDF data using rdflib"
+authors = [{name = "Your Name", email = "your@email.com"}]
+dependencies = [
+    "rdflib",
+    "argcomplete"
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+rdflib-serializer = "rdflib_serializer.cli:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
