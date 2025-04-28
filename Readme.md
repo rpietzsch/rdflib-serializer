@@ -1,7 +1,19 @@
 # 📚 rdflib-serializer
 
-**rdflib-serializer** is a simple command-line tool to parse and serialize RDF data using [rdflib](https://github.com/RDFLib/rdflib). 
+**rdflib-serializer** is a simple command-line tool to parse and serialize RDF data using [rdflib](https://github.com/RDFLib/rdflib).
 It supports reading from files or stdin, flexible input and output formats, and shell tab completion for an improved CLI experience.
+
+Especially useful to prune unused prefixes from turtle files:
+
+```shell-session
+$ echo "@prefix foo: <urn:uri:foo/> .
+@prefix bar: <urn:uri:bar/> .
+foo:a a foo:A .
+" | rdflib-serializer -
+@prefix foo: <urn:uri:foo/> .
+
+foo:a a foo:A .
+```
 
 ---
 
