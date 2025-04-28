@@ -1,1 +1,2 @@
-rdflib_serializer.egg-info
+rdflib_serializer.egg-info/
+build/

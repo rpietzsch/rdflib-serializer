@@ -40,7 +40,7 @@ def main() -> None:
             data = f.read()
             g.parse(data=data, format=args.source_format)
 
-    print(g.serialize(format=args.target_format).decode('utf-8'))
+    print(g.serialize(format=args.target_format))
 
 if __name__ == "__main__":
     main()

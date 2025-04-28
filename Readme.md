@@ -1,6 +1,6 @@
 # 📚 rdflib-serializer
 
-**rdflib-serializer** is a simple command-line tool to parse and serialize RDF data using [rdflib](https://github.com/RDFLib/rdflib).  
+**rdflib-serializer** is a simple command-line tool to parse and serialize RDF data using [rdflib](https://github.com/RDFLib/rdflib). 
 It supports reading from files or stdin, flexible input and output formats, and shell tab completion for an improved CLI experience.
 
 ---
